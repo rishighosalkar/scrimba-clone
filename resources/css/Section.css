@@ -1,0 +1,122 @@
+/* Float four columns side by side */
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  .column {
+    float: left;
+    width: 20%;
+    height: 100px;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row2 {margin: 0 30px;}
+  
+  .container {
+    padding: 0 0px;
+  }
+  
+  /* Clear floats after the columns */
+  .container::after, .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: right;
+    /*background-color: #f1f1f1;*/
+    border-radius: 10px;
+  }
+  
+  .card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: right;
+      background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .title2 {
+    font-size: 35px;
+    text-align: center;
+    color: inherit;
+    text-decoration: underline;
+    margin: 0;
+    padding-top: 40px;
+  }
+  
+  .d4 {
+    font-weight: 400;
+    color: var(--night);
+    font-size: 20px;
+    line-height: 28px;
+    --u_lh: 28px;
+    margin-right: 60%;
+  }
+  
+  .p2 {
+    font-weight: 400;
+    color: var(--night);
+    font-size: 16px;
+    line-height: 22px;
+    --u_lh: 22px;
+  }
+  
+  .h21 {font-weight: 600;
+  color: var(--night);
+  text-shadow: 2px 2px 0 #FFF;
+  font-size: 20px;
+  line-height: 22px;
+  --u_lh: 22px;}
+  
+  .h22 {font-weight: 600;
+  color: var(--night);
+  text-shadow: 2px 2px 0 #FFF;
+  font-size: 20px;
+  line-height: 22px;
+  --u_lh: 22px;}
+  
+  .h23 {font-weight: 500;
+  color: var(--night);
+  text-shadow: 2px 2px 0 #FFF;
+  font-size: 1.3rem;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+  --u_lh: 22px;
+  text-align: right;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  }
+  
+  /*color: hsla(26.50,53.00%,91.50%,50%);*/
+  
+  .section2{
+    background-image: url("resources\css\img\img1.svg"), url("resources\css\img\img1.svg");
+    background-repeat: no-repeat;
+    background-size: 120px, 200px;
+    height: 100px;
+  }
+  
+  .section2::before{
+    content: "";
+    background-image: url("resources\css\img\img1.svg"), url("resources\css\img\img1.svg");
+    background-repeat: no-repeat;
+    background-size: cover, cover;
+    opacity: 0.4;
+  }

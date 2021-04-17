@@ -1,0 +1,63 @@
+.containerSection1{
+    font-family: 'Merriweather Sans', sans-serif;
+    
+    height:250px;
+    margin-top:15%;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+.lady{
+    width:110px;
+    height: 200px;
+    margin-left:50px;
+}
+.man{
+    width:100px;
+    height:250px;
+    margin-left: 60px;
+    padding-top: 0px;
+
+}
+.section11{
+    width: 33%;
+}
+.section12{
+    width: 33%;
+
+
+}
+.section13{
+    width: 33%;
+    
+}
+.sec12{
+    margin-left:20px;
+    margin-top: 5px;
+   
+}
+.sec13{
+    margin-left:20px;
+    margin-top: 5px;
+   
+}
+.vl1 {
+    border-left: 6px solid #e5e7ec;
+    height:50px;
+  }
+  .vl {
+    border-left: 6px solid white;
+    height:50px;
+  }
+.inside{
+    display: flex;
+}
+.h13{
+    color: #7a7b7e;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+}
+.a1{
+    color:blue;
+}
